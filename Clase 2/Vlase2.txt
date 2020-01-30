@@ -1,0 +1,61 @@
+jQuery y ECMAScript:
+
+Libreria de javascript rápida, pequeña y rica en elementos.
+Permite hacer cosas en los documentos de HTML como transversar y manipular eventos, animaciones y un manejo de AJAX mucho
+más simple
+
+ECMAScript:
+Es como ha sido documentado javascript
+
+Es una especificacion del lenguaje en el cual javascript esta basado.
+
+En la vrsion 5 se agrego JSON y diversos metodos de arreglos
+
+En la version 6 (2015) se agrego let, content, ademas de parametros predefinidos y más metodos de arreglos
+
+El mayor cambio se dio con ECMAScript 6 
+
+ let setText = msg =>{
+        $("div.holaMundo").text(msg);
+    }
+    // alert("hola uwu");
+    //$("body").css("background-color","gray");
+     $("div.holaMundo").text("Hola owo");
+    //setTextDiv("Hola TwT");
+    //setTimeout(()=>{
+    //    $("div.holaMundo").text("Adeos owo");
+    //    setText("Adeos");
+    //}, 3000);
+
+    //let prom= new Promise((resolve, reject)=>{
+    //    setTimeout(()=>{
+    //        reject("Ajajaja");
+    //    }, 3000);
+
+    //    let loteria=0;
+    //    while (loteria == 5){
+    //    loteria = Math.floor(Math.random() *100);
+    //    console.log(`Valor ${loteria}`);
+    //}
+    //setText("OWO");
+    //});
+    //setText("Cargando...");
+    //prom.then(msg =>{
+    //    setText(msg);
+    //});
+    //setText("Me morí, ya te puedes ir");
+    $.ajax({
+        url: "../jason/data.json"
+    }).done(data => {
+        console.log(data);
+        let comment =data["_comment"];
+        console.log(comment);
+        let alumnos =data["alumnos"];
+        console.log(alumnos);
+        alumnos.forEach((element) => {
+            console.log(element);
+        });
+        alumnos.forEach((v,k) => {
+            console.log(`Key ${k}, Value ${v}`);
+        });
+    })

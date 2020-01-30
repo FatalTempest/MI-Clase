@@ -1,0 +1,25 @@
+{
+    "_comment": "Este objeto nos traera la lista de alumnos de un grupo.",
+    "alumnos": [
+        {
+            "nombre": "Jose",
+            "edad": 26,
+            "semestre": "Graduado"
+        },
+        {
+            "nombre": "Bryan",
+            "edad": 25,
+            "semestre": "Octavo"
+        },
+        {
+            "nombre": "David",
+            "edad": 21,
+            "semestre": "Cuarto"
+        },
+        {
+            "nombre": "Julia",
+            "edad": 18,
+            "semestre": "Primero"
+        }
+    ]
+}
