@@ -118,7 +118,7 @@ export function drawScene(gl, programInfo, buffers, deltaTime) {
   );
 
   {
-    const vertexCount = 36;
+    const vertexCount = 24;
     const type = gl.UNSIGNED_SHORT;
     const offset = 0;
     gl.drawElements(gl.TRIANGLES, vertexCount, type, offset);

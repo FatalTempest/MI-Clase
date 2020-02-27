@@ -1,8 +1,8 @@
 import { fragmentShader } from "./shaders/colorShader/fragmentShader.mjs";
 import { vertexShader } from "./shaders/colorShader/vertexShader.mjs";
 import { initShaderProgram } from "./shaders/methods.mjs";
-import { initBuffers } from "./shaders/colorShader/init.mjs";
-import { drawScene } from "./scenes/scene03.mjs";
+import { initBuffers } from "./shaders/colorShader/init2.mjs";
+import { drawScene } from "./scenes/scene02.mjs";
 function main() {
   const canvas = document.querySelector("#gl");
   const gl = canvas.getContext("webgl");
